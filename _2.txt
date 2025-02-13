@@ -1,0 +1,28 @@
+
+Aim: Find the second maximum and second minimum in a set of numbers using auto boxing and unboxing.
+*****************************************************************************************************
+import java.util.*;
+public class secondMaxMin {
+public static void main(String[] args) { Scanner sc = new Scanner(System.in); System.out.println("Enter the size of Array");
+}
+int n = sc.nextInt();
+List<Integer> arlist = new ArrayList<>(); int num[] = new int[n];
+System.out.println("Enter a number");
+for (int i = 0; i < n; i++) {
+}
+arlist.add(sc.nextInt());
+Collections.sort(arlist);
+int secondMin = arlist.get(1);
+int secondMax = arlist.get(arlist.size() - 2);
+System.out.println("Second Minimum:" + secondMin); System.out.println("Second Maximum:" + secondMax);
+OUTPUT:
+Enter the size of Array
+5
+Enter a number
+10
+20
+30
+40
+50
+Second Minimum: 20
+Second Maximum: 40
