@@ -1,0 +1,40 @@
+
+Aim: Write a program to convert numbers into words using Enumerations with constructors, methods and instance variables. (INPUT RANGE-0 TO 99999)
+EX: 36 THIRTY SIX
+********************************************************************************
+import java.util.Scanner;
+public class NumberToWords Converter {
+enum Units
+{
+ZERO(""), ONE("ONE"), TWO("TWO"), THREE("THREE"), FOUR("FOUR"),
+FIVE("FIVE"),
+SIX("SIX"),SEVEN("SEVEN"), EIGHT("EIGHT"), NINE("NINE");
+private final String word;
+Units(String word) {
+this.word word;
+}
+public String getWord() { return word;
+}
+enum Tens
+{
+TEN("TEN"), ELEVEN("ELEVEN"), TWELVE("TWELVE"), THIRTEEN("THIRTEEN"),
+FOURTEEN("FOURTEEN"), FIFTEEN("FIFTEEN"), SIXTEEN("SIXTEEN"), SEVENTEEN("SEVENTEEN"),EIGHTEEN("EIGHTEEN"),NINETEEN("NINETEEN"),
+TWENTY("TWENTY"), THIRTY("THIRTY"), FORTY("FORTY"), FIFTY("FIFTY"), SIXTY("SIXTY"), SEVENTY("SEVENTY"), EIGHTY("EIGHTY"), NINETY("NINETY"); private final String word;
+Tens(String word) {
+this.word word;
+}
+public String getWord() {
+}
+return word;
+enum Thousands {
+THOUSAND("THOUSAND"); private final String word;
+Thousands(String word) {
+}
+this.word word;
+public String getWord() {
+return word;
+public static String convertToWords(int number) {
+if (number == 0) {
+return "ZERO";
+}
+1
